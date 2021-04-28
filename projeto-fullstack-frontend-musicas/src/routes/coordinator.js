@@ -10,11 +10,11 @@ export const goToAddMusic = (history) => {
   history.push("/adicionar-musica")
 }
 
+export const goToMusicDetail = (history, id) => {
+  history.push(`/musica/${id}`)
+}
+
 export const goToMusicList = (history) => {
   history.push("/")
 }
 
-
-export const goToMusicDetail = (history) => {
-  history.push(`/musica/${id}`)
-}
