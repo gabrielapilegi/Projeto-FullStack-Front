@@ -11,7 +11,7 @@ import { goToSignUp } from "../../routes/coordinator"
 import { useHistory } from "react-router-dom"
 import useUnprotectedPage from "../../hooks/useUnprotectedPage";
 
-const LoginPage = () => {
+const LoginPage = ({setRightButtonText}) => {
   useUnprotectedPage()
 
   const history = useHistory()
@@ -19,7 +19,7 @@ const LoginPage = () => {
   return (
     <ScreenContainer>
       <LogoImage src={logo}/>
-      <LoginForm/>
+      <LoginForm setRightButtonText ={setRightButtonText}/>
       
       <SignUpButtonContainer>
         <Button
